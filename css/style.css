@@ -390,6 +390,10 @@ footer .socials .icon {
         display: none;
     }
 
+    .main_section h1 {
+        text-align: center;
+    }
+
     .projects_container {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
     }

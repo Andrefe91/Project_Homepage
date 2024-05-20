@@ -16,14 +16,17 @@
             <!-- Header -->
             <header class="header">
                 <div class="portrait">
-                    <img src="Images/header_desktop.jpg" alt="Artistic photograph of Jhon Doe">
-                    <h1 class="name">Jhon Doe</h1>
+                    <img src="Images/header_desktop.jpg" alt="Artistic photograph of John Doe"
+                        srcset="Images/header_mobile.jpg 300w, Images/header_tablet.jpg 900w, Images/header_desktop.jpg 1800w"
+                        sizes="(max-width: 650px) 40vw, (max-width:900px) 45vw, 100vw"
+                    >
+                    <h1 class="name">John Doe</h1>
 
                 </div>
 
                 <div class="personal_info_container">
                     <div class="name_tablet">
-                        <h1>Jhon Doe</h1>
+                        <h1>John Doe</h1>
                     </div>
 
                     <div class="personal_info">
@@ -221,7 +224,13 @@
                     </div>
                 </div>
                 <div class="footer_img">
-                    <img src="Images/footer_desktop.jpg" alt="Jhon doe taking a fotograph with orange backlightning">
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="Images/footer_mobile.jpg">
+                        <source media="(max-width: 900px)" srcset="Images/footer_tablet.jpg">
+                        <img src="Images/footer_desktop.jpg" alt="John Doe taking a fotograph with orange backlightning">
+                    </picture>
+
+
                 </div>
             </footer>
         </div>
